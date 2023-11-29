@@ -1,0 +1,36 @@
+kind: core/resource-type-internal
+metadata:
+  name: kapeta/resource-type-auth-jwt-provider
+  title: JWT Authentication Provider
+  description: Provide JWT authentication to your services
+  visibility: public
+spec:
+  ports:
+    - name: jwt-auth
+      type: jwt-auth
+  schema:
+    type: object
+    required:
+      - port
+    properties:
+      port:
+        $ref: /core/port
+
+---
+kind: core/resource-type-internal
+metadata:
+  name: kapeta/resource-type-auth-jwt-consumer
+  title: JWT Authentication
+  description: Authenticate your APIs using JWT
+  visibility: public
+spec:
+  ports:
+    - name: http
+      type: http
+  schema:
+    type: object
+    required:
+      - port
+    properties:
+      port:
+        $ref: /core/port
