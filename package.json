@@ -1,7 +1,7 @@
 {
-    "name": "@kapeta/resource-type-rest",
+    "name": "@kapeta/resource-type-auth-jwt",
     "version": "local",
-    "description": "Provides REST API and Client resource type to Kapeta",
+    "description": "Provide JWT authentication to your services",
     "keywords": [
         "kapeta",
         "rest",
