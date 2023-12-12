@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-import { JWTAuthEditorComponent } from './JWTAuthEditorComponent';
 import { KIND_PROVIDER, KIND_CONSUMER } from './types';
 import { IResourceTypeProvider, ResourceRole, ResourceProviderType } from '@kapeta/ui-web-types';
 import { Metadata } from '@kapeta/schemas';
@@ -16,7 +15,6 @@ export const ProviderConfig: IResourceTypeProvider<Metadata> = {
     title: 'JWT Authentication Provider',
     role: ResourceRole.PROVIDES,
     type: ResourceProviderType.INTERNAL,
-    editorComponent: JWTAuthEditorComponent,
     consumableKind: KIND_CONSUMER,
     definition: {
         kind: 'core/resource-type-internal',

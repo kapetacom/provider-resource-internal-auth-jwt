@@ -16,7 +16,6 @@ import {
 
 import { Metadata, Resource } from '@kapeta/schemas';
 
-import { JWTAuthEditorComponent } from './JWTAuthEditorComponent';
 const packageJson = require('../../package.json');
 
 const ConsumerConfig: IResourceTypeProvider<Metadata> = {
@@ -25,7 +24,6 @@ const ConsumerConfig: IResourceTypeProvider<Metadata> = {
     title: 'JWT Authentication',
     role: ResourceRole.CONSUMES,
     type: ResourceProviderType.INTERNAL,
-    editorComponent: JWTAuthEditorComponent,
     converters: [
         {
             fromKind: KIND_PROVIDER,
