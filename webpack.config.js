@@ -28,18 +28,8 @@ module.exports = {
                 loader: 'babel-loader',
                 options: {
                     sourceMaps: true,
-                    presets: ['@babel/env', '@babel/typescript', '@babel/react']
+                    presets: ['@babel/env', '@babel/typescript']
                 },
-            },
-            {
-                test: /\.css/,
-                use: ['style-loader', 'css-loader'],
-                include: Path.resolve(__dirname, './'),
-            },
-            {
-                test: /\.less$/,
-                use: ['style-loader', 'css-loader', 'less-loader'],
-                include: Path.resolve(__dirname, './'),
             },
             {
                 test: /\.ya?ml$/,
