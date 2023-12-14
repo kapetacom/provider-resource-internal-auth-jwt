@@ -43,8 +43,8 @@ const ConsumerConfig: IResourceTypeProvider<Metadata> = {
         spec: {
             ports: [
                 {
-                    name: 'jwt-auth',
-                    type: 'jwt-auth',
+                    name: 'http',
+                    type: 'http',
                 },
             ],
         },
