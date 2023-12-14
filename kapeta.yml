@@ -6,8 +6,8 @@ metadata:
   visibility: public
 spec:
   ports:
-    - name: jwt-auth
-      type: jwt-auth
+    - name: http
+      type: http
   schema:
     type: object
     required:
