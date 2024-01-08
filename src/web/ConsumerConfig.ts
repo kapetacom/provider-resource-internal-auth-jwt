@@ -15,6 +15,7 @@ import {
 } from '@kapeta/ui-web-types';
 
 import { Metadata, Resource } from '@kapeta/schemas';
+import _ from "lodash";
 
 const packageJson = require('../../package.json');
 
@@ -28,7 +29,9 @@ const ConsumerConfig: IResourceTypeProvider<Metadata> = {
         {
             fromKind: KIND_PROVIDER,
             createFrom: (data: Resource) => {
-                return {...data}
+                const out = _.cloneDeep(data);
+                out.metadata.name = 'authjwtconsumer';
+                return out
             }
         }
     ],
