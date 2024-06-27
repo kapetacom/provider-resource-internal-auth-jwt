@@ -5,6 +5,10 @@ metadata:
   description: Provide JWT authentication to your services
   visibility: public
 spec:
+  icons:
+    - type: url
+      value: https://storage.googleapis.com/kapeta-public-cdn/icons/themed/json-web-tokens-dark.svg
+      theme: light
   ports:
     - name: http
       type: http
@@ -24,6 +28,10 @@ metadata:
   description: Authenticate your APIs using JWT
   visibility: public
 spec:
+  icons:
+    - type: url
+      value: https://storage.googleapis.com/kapeta-public-cdn/icons/themed/json-web-tokens-dark.svg
+      theme: light
   ports:
     - name: http
       type: http
